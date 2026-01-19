@@ -2,64 +2,49 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kriscode</title>
-    <link rel="stylesheet" href="css/common.css">
-    <style>
-        /* 간단한 배너 스타일 */
-        body {
-            font-family: 'Nanum Gothic', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4A90E2;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-        }
-        header img.logo {
-            height: 60px;
-            vertical-align: middle;
-        }
-        header h1 {
-            display: inline-block;
-            margin: 0 0 0 10px;
-            font-size: 2rem;
-            vertical-align: middle;
-        }
-        .banner {
-            background-color: #50E3C2;
-            padding: 15px;
-            text-align: center;
-            font-size: 1.2rem;
-            color: #fff;
-        }
-        main {
-            padding: 40px 20px;
-            text-align: center;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 공용 CSS (풀버전 핵심) -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header>
-        <img src="assets/images/logo.png" alt="Kriscode Logo" class="logo">
-        <h1>Kriscode</h1>
-    </header>
 
-    <div class="banner">
-        🎉 Kriscode에 오신 것을 환영합니다! 최신 블록코딩 & 커뮤니티 체험하기 🎉
+    <!-- ===== SIDEBAR ===== -->
+    <div id="sidebar">
+        <h2>Kriscode</h2>
+        <a href="index.html">홈</a>
+        <a href="editor.html">코드 에디터</a>
+        <a href="community/index.html">커뮤니티</a>
+        <a href="login.html">로그인</a>
+        <a href="admin.html">관리자</a>
     </div>
 
+    <!-- ===== HEADER ===== -->
+    <header>
+        <img src="assets/img/logo.png" alt="Kriscode Logo" class="logo">
+        <nav>
+            <a href="login.html">로그인</a>
+            <a href="editor.html">에디터</a>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
     <main>
-        <h2>시작하기</h2>
-        <p>아래 버튼을 눌러 에디터나 커뮤니티로 이동할 수 있어요.</p>
-        <div style="margin-top: 30px;">
-            <a href="editor.html" style="padding: 12px 24px; background-color: #4A90E2; color: #fff; text-decoration: none; border-radius: 5px; margin-right: 10px;">에디터로 이동</a>
-            <a href="community/index.html" style="padding: 12px 24px; background-color: #50E3C2; color: #fff; text-decoration: none; border-radius: 5px;">커뮤니티로 이동</a>
+        <div class="card">
+            <h1>크리스코드에 오신 걸 환영합니다 👋</h1>
+            <p>코딩 · 프로젝트 · 커뮤니티를 한 곳에서</p>
+            <br>
+            <a href="editor.html" class="btn">코딩 시작하기</a>
         </div>
     </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        © 2026 Kriscode. All rights reserved.
+    </footer>
+
+    <!-- 공용 JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
