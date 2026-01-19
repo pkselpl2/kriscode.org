@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Kriscode</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 공용 CSS (풀버전 핵심) -->
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <title>Kriscode 메인</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.0/NanumSquareRound.woff2" rel="stylesheet">
 </head>
 <body>
-
-    <!-- ===== SIDEBAR ===== -->
-    <div id="sidebar">
-        <h2>Kriscode</h2>
-        <a href="index.html">홈</a>
-        <a href="editor.html">코드 에디터</a>
-        <a href="community/index.html">커뮤니티</a>
-        <a href="login.html">로그인</a>
-        <a href="admin.html">관리자</a>
+  <!-- 상단 헤더 -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/무제221_20260119115114.png" alt="Kriscode 로고" class="logo-img">
+      </a>
     </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="community/index.html">커뮤니티</a></li>
+        <li><a href="projects/index.html">작품 만들기</a></li>
+        <li><a href="notice.html">공지사항</a></li>
+        <li><a href="download.html">다운로드</a></li>
+      </ul>
+    </nav>
+    <div class="user-area">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="검색...">
+        <button id="searchBtn">🔍</button>
+      </div>
+      <div class="notifications" id="notifBtn">🔔<span class="badge">3</span></div>
+      <div class="profile" id="profileBtn">
+        <img src="assets/img/profile.png" alt="프사" class="profile-img">
+        <ul class="profile-dropdown" id="profileDropdown">
+          <li><a href="profile.html">내 프로필</a></li>
+          <li><a href="login.html">로그아웃</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    <!-- ===== HEADER ===== -->
-    <header>
-        <img src="assets/무제221_20260119115114.png" alt="Kriscode Logo" class="logo">
-        <nav>
-            <a href="login.html">로그인</a>
-            <a href="editor.html">에디터</a>
-        </nav>
-    </header>
+  <!-- 메인 콘텐츠 -->
+  <main>
+    <section class="community-list">
+      <h2>커뮤니티 리스트</h2>
+      <ul>
+        <li><a href="community/chat/index.html">채팅방</a></li>
+        <li><a href="community/tips/index.html">팁 공유</a></li>
+        <li><a href="community/projects/index.html">프로젝트 공유</a></li>
+        <li><a href="community/april_fools/index.html">만우절</a></li>
+      </ul>
+    </section>
+  </main>
 
-    <!-- ===== MAIN ===== -->
-    <main>
-        <div class="card">
-            <h1>크리스코드에 오신 걸 환영합니다 👋</h1>
-            <p>코딩 · 프로젝트 · 커뮤니티를 한 곳에서</p>
-            <br>
-            <a href="editor.html" class="btn">코딩 시작하기</a>
-        </div>
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        © 2026 Kriscode. All rights reserved.
-    </footer>
-
-    <!-- 공용 JS -->
-    <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
